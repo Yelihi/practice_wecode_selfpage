@@ -1,0 +1,37 @@
+.title{
+    font-family: var(--title-font-family);
+    font-weight: 300;
+    text-transform: uppercase; /* 자동 대문자 */
+    position: relative;
+}
+
+.title:hover{
+    transform: translateY(-2rem);
+    transition: transform .25s .25s ease-in-out;
+}
+
+.summary-title{
+    font-size: clamp(4rem, 10vw, 8rem); /* 최소값과 최대값을 구할 수 있음.  최소 5, 최대 10 그리고 그 사이 10vw의 비율에 맞는 폰트 사이즈*/
+    text-align: center;
+    line-height: 1.2;
+}
+
+.summary-subtitle{
+    font-family: var(--body-font-family);
+    font-weight: 300;
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1;
+    margin-top: 3rem;
+    opacity: .7;
+    text-align: center;
+}
+
+.inline-image{
+    width: 7rem;
+    height: 7rem;
+    background: url(../images/scream.webp) top center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border-bottom-left-radius: 70%;
+    margin: 0 1rem;
+}

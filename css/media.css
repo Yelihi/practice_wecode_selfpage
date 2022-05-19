@@ -1,0 +1,11 @@
+@media screen and (min-width: 768px) {
+    .inline-image{
+        width: 12rem;
+        height: 12rem;
+    }
+    
+    .section-description{
+        grid-template-columns: 1.5fr 1fr;
+        align-items: center;
+    }
+}

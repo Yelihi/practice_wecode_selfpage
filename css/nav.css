@@ -1,0 +1,124 @@
+.header{
+    margin-bottom: 5rem;
+}
+
+.navbar{
+    display: flex; /* inline 요소를 바꿔주었음 */
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+    position: relative;
+    background-color: var(--light-color);
+}
+
+.logo{
+    font-size: 3rem;
+    font-family: var(--title-font-family);
+    font-weight: 600;
+}
+
+.navbar-buttons{
+    display: flex;
+    column-gap: 0.5rem; /* 그리드에서도 자주 볼 수 있음. 각 요소 사이의 간격을 표현*/
+    padding: 0 .5rem;
+    border-radius: .5rem;
+    position: relative;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    z-index: 999; /* 평면상에서의 좌표를 표현. 숫자에 따라서 겹치는 순서 적용가능 */
+
+}
+
+.button{
+    cursor: pointer;
+}
+
+.icon-button{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+}
+
+.icon-button i{
+    margin: auto; /* 자연스럽게 중앙 배치한다 부모 속성에 flex 넣은 다음 이렇게 설정하면 쉽게 중앙배치 가능*/
+}
+
+
+/* 클릭에 따라 발생될 아이콘 */
+.close-icon,
+.theme-on{
+    display: none;
+}
+
+.menu{
+    position:absolute;
+    background-color: var(--dark-color);
+    right: 1.55rem; /* 상대 부모 위치의 오른쪽끝에서 수치만큼 떨어지게 된다. 즉 왼쪽 이동 */
+    color: var(--light-color);
+    /* z-index: -1; */
+    pointer-events: none; /* 추후에 button 과 menu 가 겹치게 되었을 때, z-index로 상하 위치를 정해주기 보다. 이를 설정해주면 클릭이 안되서 겹치지않는다. */
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    transform: scale(0); /* 스케일을 0 로 만드는거니 화면상에서 사라지게 된다. */
+    transform-origin: right;
+    transition: transform .25s .25s cubic-bezier(1,0,0,1);
+
+    /* transition: <property> <duration> <timing-function> <delay> */
+    /* cubic-bezier()는 변환이 일어나는 속도를 그래프적으로 적용하겠다는 것임. 1차함수처럼  */
+}
+
+.list{
+    display: flex; /* 세로정렬된 리스트를 가로 정렬하기 위해서 */
+    gap: 2.5rem; /* 행과 열 사이의 간격 . 시작은 행 간격부터 시작하며 열 간격이 그다음 나옴*/
+}
+
+.menu > .list{ /* 글자들의 투명도를 100으로 해놓는다. active 전 */
+    opacity: 0;
+}
+
+.list-link{
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+
+.list .list-link{
+    text-transform: uppercase; 
+}
+
+.list-link:hover,
+.list-link:focus{
+    opacity: .7;
+}
+
+.list-link span{
+    font-weight: bold;
+}
+
+/* 자바스크립트 적용될 클래스 지정 (html 상에 있는것이 아니라 이벤트에 따라 추가되고 삭제될 클래스) */
+
+.active.menu{
+    /* z-index: initial; */
+    pointer-events: initial; /* 초기 설정값 */
+    transform: scale(1) translateY(4.5rem); /* translateY 는 위에서 아래로 수치만큼 떨어트리겠다는 의미. 리스트가 내려오는 효과를 가진다. */
+}
+
+.active.menu > .list{ /* 활성화 되면서 글자 투명도를 0으로 서서히 transition 해서 바꾼다. */
+    opacity: 1;
+    transition: opacity .1s .5s;
+}
+
+.active .open-icon{
+    display: none;
+}
+
+.active .close-icon{
+    display: block;
+}
+
+.dark-theme .theme-off{
+    display: none;
+}
+
+.dark-theme .theme-on{
+    display: block;
+}

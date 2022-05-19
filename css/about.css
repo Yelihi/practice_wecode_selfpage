@@ -1,0 +1,83 @@
+.section-description{
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.description{
+    font-weight: 300;
+    font-size: clamp(1.7rem, 3vw, 2.5rem);
+}
+
+.text-bold{
+    font-weight: 400;
+}
+
+.description-image{
+    width: 30rem;
+    height: 30rem;
+    margin: 0 auto;
+    transform: rotate(10deg);
+}
+
+.description-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    border-bottom-left-radius: 0;
+}
+
+/* tech skill */
+
+.tech-skill{
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    max-width: 50rem;
+}
+
+.tech-skill-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tech-skill-item i{
+    font-size: 5rem;
+    opacity: .8;
+}
+
+.tech-skill-item::after, /* after 는 컨텐츠 뒤에, before 는 컨텐츠 앞에 위치한다. 컨텐츠를 비워버리면 두가지가 다 붙어있는 형식이 된다. */
+.tech-skill-item::before{
+    position: absolute;
+    top: -1rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform .5s, opacity .5s;
+}
+
+.tech-skill-item::before{
+    content: '';
+    border: 1rem solid transparent; /* 아무런 컨텐츠가 없을 시 외곽선을 생성하면 네모 상자로 표현된다. .을 감싼다 생각해보자. 이후 transparent(투명)화를 함*/
+    border-top-color: var(--dark-color); /* 외곽선의 윗 부분만 색상을 준다면, 모양상 삼각형 모양이 나타나게 된다. */
+    transform: translateY(0);
+}
+
+.tech-skill-item::after{
+    content: attr(data-tooltip);
+    width: max-content;
+    color: var(--light-color);
+    padding: .5rem 1rem;
+    background-color: var(--dark-color);
+    border-radius: .4rem;
+}
+
+.tech-skill-item:hover::before{
+    opacity: 1;
+    transform: translateY(-.6rem);
+}
+
+.tech-skill-item:hover::after{
+    opacity: 1;
+    transform: translateY(calc(-100% + -.5rem));
+}
