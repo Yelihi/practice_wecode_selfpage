@@ -8,4 +8,11 @@
         grid-template-columns: 1.5fr 1fr;
         align-items: center;
     }
+
+    .section-biograpy-container{
+        grid-template-columns: 1.2fr 1.4fr;
+        align-items: center;
+        column-gap: 2rem;
+    }
+
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,7 @@
     <!-- cssstylesheet -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <!-- !HEADER -->
     <header class="header" id="home">
@@ -33,17 +35,20 @@
                 <ul class="list">
                     <li class="list-item">
                         <a href="#aboutme" class="list-link">
-                            <span>01</span> About me <!--띄어쓰기 적용 된다.-->
+                            <span>01</span> About me
+                            <!--띄어쓰기 적용 된다.-->
                         </a>
                     </li>
                     <li class="list-item">
                         <a href="#" class="list-link">
-                            <span>02</span> Project <!--띄어쓰기 적용 된다.-->
+                            <span>02</span> Project
+                            <!--띄어쓰기 적용 된다.-->
                         </a>
                     </li>
                     <li class="list-item">
                         <a href="#" class="list-link">
-                            <span>03</span> Contact <!--띄어쓰기 적용 된다.-->
+                            <span>03</span> Contact
+                            <!--띄어쓰기 적용 된다.-->
                         </a>
                     </li>
                 </ul>
@@ -53,9 +58,13 @@
     <!-- 소개문구! -->
     <section class="summary section">
         <div class="container">
-            <h1 class="title summary-title">Beautiful<span class="inline-image"></span>
-            Struggle</h1>
-            <h3 class="summary-subtitle">Frontend Developer</h3>
+            <div class="hover-title">
+                <h1 class="title summary-title">Beautiful<span class="inline-image"></span>
+                    Struggle</h1>
+                <!-- <p class="explain-title hidden">intransitive verb. 1 <br>: to make strenuous or violent efforts in the face of 
+                    difficulties or opposition struggling with the problem.</p> -->
+                <h3 class="summary-subtitle">Frontend Developer</h3>
+            </div>
         </div>
     </section>
     <!-- 자기소개 -->
@@ -64,9 +73,10 @@
             <div class="section-description d-grid">
                 <div class="scroll-reveal-left">
                     <p class="description">
-                        반갑습니다! 6조 <span class="text-bold">HotSix</span>팀에 소속되있는 연약한 예비 개발자 <span class="text-bold">최원익</span>입니다. 올해 처음으로 개발자로 커리어전환을
+                        반갑습니다! 6조 <span class="text-bold">HotSix</span>팀에 소속되있는 연약한 예비 개발자 <span
+                            class="text-bold">최원익</span>입니다. 올해 처음으로 개발자로 커리어전환을
                         계획하였고, <span class="text-bold">사용자 편의성과 시각적 영감</span>을 주는 웹페이지를 만들고 싶어 프론트엔드 개발자를 목표로 삼아 공부를
-                        하고 있습니다. 
+                        하고 있습니다.
                     </p>
                     <p class="description">
                         새로운 기술을 익히는 과정은 언제나 쉽지 않지만,꾸준한 노력으로 <span class="text-bold">사용자들의 영감을 현실화 시킬수 있는 개발자</span>가
@@ -101,6 +111,112 @@
             </div>
         </div>
     </section>
+    <!-- 일대기 -->
+    <section class="history section" id="history">
+        <div class="container">
+            <div class="section-title-container">
+                <h2 class="title section-title">Biograpy</h2>
+                <div class="section-subtitle-container">
+                    <span class="section-subtitle-number">02</span>
+                    <h5 class="section-subtitle">1991.06.19~</h5>
+                </div>
+            </div>
+
+            <div class="section-nav-container">
+                <div class="history-navbar">
+                    <div class="history-navbar-list">
+                        <label for="tab-01">서울</label>
+                    </div>
+                    <div class="history-navbar-list">
+                        <label for="tab-02">부산</label>
+                    </div>
+                    <div class="history-navbar-list">
+                        <label for="tab-03">인천</label>
+                    </div>
+                    <div class="history-navbar-list">
+                        <label for="tab-04">이제는</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="input-container">
+                <input type="radio" name="tapmenu" id="tab-01" checked>
+                <input type="radio" name="tapmenu" id="tab-02">
+                <input type="radio" name="tapmenu" id="tab-03">
+                <input type="radio" name="tapmenu" id="tab-04">
+
+                <div class="section-biograpy-container con1">
+                    <div class="history-image">
+                        <img src="./images/아현 달동네밤.png" class="slide1" alt="">
+                        <img src="./images/어두운 배경.jpeg" class="slide1" alt="">
+                    </div>
+                    <div class="history-paragraph">
+                        <p class="history-p-alt">"여긴 언덕이 너무 많아.."</p>
+                        <h3 class="history-p-title">아현. 제 고향입니다.</h3>
+                        <span class="history-p-span">태어나고 고등학교까지 어연 20년을 지낸곳입니다. 언덕이 많아 겨울에 썰매를 타던 기억이 나네요. 
+                        <br>친구들과 뭘 해도 재밌는 시절이었지만, 고등학교 이후부터 슬슬 대입에 대한 압박감이 찾아오곤 했습니다.
+                        </span>
+                        <div class="view-container">
+                            <button type="button" class="moreview-button button">
+                                <span class="moreview-button-span">View more</span>
+                            </button>
+                        </div>
+                        <div class="moreview-image-container">
+                            <div class="moreview-image">
+                                <img src="./images/어두운 배경.jpeg" alt="">
+                            </div>
+                            <div class="moreview-image">
+                                <img src="./images/부산 여행.jpeg" alt="">
+                            </div>
+                            <div class="moreview-image">
+                                <img src="./images/아현 달동네밤.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-biograpy-container con2">
+                    <div class="history-image" id="history2">
+                        <img src="./images/부산 여행2.jpeg" alt="">
+                    </div>
+                    <div class="history-paragraph">
+                        <p class="history-p-alt">"따듯한 동네"</p>
+                        <h3 class="history-p-title">어쩌다보니 부산!</h3>
+                        <span class="history-p-span">독립을 한다는 것은 전혀 생각하지 못했는데, 수능 점수와 사정을 생각하다보니 부산대학교를 다니게 되었습니다. 
+                        <br>타지에서 생활을 한다는것이 당시에는 두려웠지만, 지금와서 생각해보면 경험적으로 큰 도움이 되었던 거 같습니다. 어떻게든 살아갈 수 있다라는 확신감을 가지게 되었습니다.
+                        내려간지 몇주 어리버리 하다 금새 적응을 맞췄는지 여행도 자주 다니고, 덕분에 학점은 점차 내려가는...
+                        </span>
+                    </div>
+                </div>
+                <div class="section-biograpy-container con3">
+                    <div class="history-image" id="history3">
+                        <img src="./images/인천 캐드.jpeg" alt="">
+                    </div>
+                    <div class="history-paragraph">
+                        <p class="history-p-alt">"세상 생각대로 되는 것이 없다"</p>
+                        <h3 class="history-p-title">첫 직장, 인천.</h3>
+                        <span class="history-p-span">토목과에서 계속된 고민 끝에, 서울내 설계회사를 계획하고 결국 괜찮다는 곳에 입사하게 되었습니다. 서울에서 일할거라 생각했던것은 역시나 빗나갔습니다.  
+                        <br>여러 회사가 같이 공동작업을 위해 임시사무실을 개설하는 합사개념이 설계회사에서는 종종있는데, 입사하자마자 파견을 나가게 될 것이라곤 생각도 못했죠. 
+                        덕분에 가보지 않은 인천에 대해서도 경험을 하게 되고, 직장만 아니라면 풍경도 괜찮고 나름 좋은 곳이었답니다. 직장만 아니면.
+                        </span>
+                    </div>
+                </div>
+                <div class="section-biograpy-container con4">
+                    <div class="history-image" id="history4">
+                        <img src="./images/개발자로의.jpeg" alt="">
+                    </div>
+                    <div class="history-paragraph">
+                        <p class="history-p-alt">"세상 생각대로 되는 것이 없다"</p>
+                        <h3 class="history-p-title">첫 직장, 인천.</h3>
+                        <span class="history-p-span">토목과에서 계속된 고민 끝에, 서울내 설계회사를 계획하고 결국 괜찮다는 곳에 입사하게 되었습니다. 서울에서 일할거라 생각했던것은 역시나 빗나갔습니다.  
+                        <br>여러 회사가 같이 공동작업을 위해 임시사무실을 개설하는 합사개념이 설계회사에서는 종종있는데, 입사하자마자 파견을 나가게 될 것이라곤 생각도 못했죠. 
+                        덕분에 가보지 않은 인천에 대해서도 경험을 하게 되고, 직장만 아니라면 풍경도 괜찮고 나름 좋은 곳이었답니다. 직장만 아니면.
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+    </section>
     <!-- 프로젝트 -->
     <section></section>
     <!-- 컨텍트 -->
@@ -109,4 +225,5 @@
     <Footer></Footer>
     <script src="./js/app.js"></script>
 </body>
+
 </html>

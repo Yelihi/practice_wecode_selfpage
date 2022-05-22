@@ -53,3 +53,22 @@ const changeTheme = () => {
 }
 
 $themeToggleButton.addEventListener('click', changeTheme);
+
+// 사진 더보기를 통해 새로운 창을 z-index로 활용하여 띄우기
+
+// 먼저 버튼을 가져온다
+const $moreviewButton = document.querySelector('.moreview-button');
+const $moreviewContainer = document.querySelector('.moreview-image-container');
+const $moreviewImage = document.querySelector('moreview-image');
+// 버튼을 누를 시 발동하는 함수 작성 (토글)
+function toggleView(){
+    $moreviewButton.classList.toggle('clickView');
+    $moreviewContainer.classList.toggle('clickView');
+    $moreviewImage.classList.toggle('clickView');
+};
+
+$moreviewButton.addEventListener('click', toggleView);
+
+// 활성화와 그렇지 않을떄에 각각의 새로운 창을 끄고 키고를 반복시킨다.
+
+// 이벤트를 부른다.

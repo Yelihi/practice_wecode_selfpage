@@ -11,6 +11,7 @@
 @import url("./summary.css");
 @import url('./about.css');
 @import url('./media.css');
+@import url('./biograpy.css');
 
 /* 기본 글꼴 및 스타일 설정 */
 
@@ -88,9 +89,10 @@ textarea{
 /* 재사용될 속성 */
 
 .container{
-    max-width: 96rem;
+    max-width: 110rem;
     margin: 0 auto;
     padding: 0 var(--container-padding);
+    position: relative;
 }
 
 .section{
@@ -100,6 +102,13 @@ textarea{
 
 .d-grid{
     display: grid;
+}
+
+
+.section-title{
+    font-size: clamp(3rem, 10vw, 6rem);
+    margin-bottom: .5rem;
+
 }
 
 .section-title-container{
@@ -112,9 +121,10 @@ textarea{
     justify-content: space-between;
     align-items: center;
     column-gap: 1.5rem; 
-    border-bottom: 1px solid var(--dark-color);
-    padding-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    padding-bottom: 1rem;
 }
+
 
 .section-subtitle-number{
     font-size: 2rem;

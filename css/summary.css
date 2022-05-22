@@ -1,32 +1,61 @@
-.title{
+.title {
     font-family: var(--title-font-family);
     font-weight: 300;
-    text-transform: uppercase; /* 자동 대문자 */
+    text-transform: uppercase;
+    /* 자동 대문자 */
     position: relative;
 }
 
-.title:hover{
-    transform: translateY(-2rem);
-    transition: transform .25s .25s ease-in-out;
-}
 
-.summary-title{
-    font-size: clamp(4rem, 10vw, 8rem); /* 최소값과 최대값을 구할 수 있음.  최소 5, 최대 10 그리고 그 사이 10vw의 비율에 맞는 폰트 사이즈*/
+
+.summary-title {
+    font-size: clamp(4rem, 10vw, 8rem);
+    /* 최소값과 최대값을 구할 수 있음.  최소 5, 최대 10 그리고 그 사이 10vw의 비율에 맞는 폰트 사이즈*/
     text-align: center;
     line-height: 1.2;
+    transition: transform .25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.summary-subtitle{
+.summary-title:hover{
+    transform: translateY(-2rem);
+}
+
+.summary-title::after{
+    content: ':to make strenuous or violent efforts in the face of difficulties or opposition struggling with the problem.';
+    display: block;
+    text-transform: none;
+    font-family: var(--body-font-family);
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(0);
+    transition: opacity .25s cubic-bezier(0.19, 1, 0.22, 1), transform .25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+.summary-title:hover::after{
+    opacity: 1;
+    transform: translateY(2rem);
+}
+
+.summary-subtitle {
     font-family: var(--body-font-family);
     font-weight: 300;
     font-size: clamp(2rem, 5vw, 4rem);
     line-height: 1;
-    margin-top: 3rem;
+    margin-top: 2rem;
     opacity: .7;
     text-align: center;
 }
 
-.inline-image{
+.explain-title {
+    text-align: center;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-weight: 300;
+}
+
+
+.inline-image {
     width: 7rem;
     height: 7rem;
     background: url(../images/scream.webp) top center no-repeat;
@@ -34,4 +63,41 @@
     border-radius: 50%;
     border-bottom-left-radius: 70%;
     margin: 0 1rem;
+}
+
+.hidden {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.appear {
+    animation: fade-in 1s;
+    animation-fill-mode: forwards;
+    display: flex;
+}
+
+.disappear {
+    animation: fade-out 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+
+    }
+
+    to {
+        opacity: 0;
+    }
 }
