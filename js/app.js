@@ -1,3 +1,4 @@
+
 // 메뉴 버튼을 눌렀을 때, 밑으로 리스트가 나오도록 설정하기. 참고로 toggle 이란 0과 1을 반복하는 행위. 즉, 클래스가 존재하면 지우고, 없으면 생성하는 것.
 const menuToggleButton = document.querySelector('.menu-toggle-button');
 const menuElement = document.querySelector('.menu');
@@ -54,21 +55,3 @@ const changeTheme = () => {
 
 $themeToggleButton.addEventListener('click', changeTheme);
 
-// 사진 더보기를 통해 새로운 창을 z-index로 활용하여 띄우기
-
-// 먼저 버튼을 가져온다
-const $moreviewButton = document.querySelector('.moreview-button');
-const $moreviewContainer = document.querySelector('.moreview-image-container');
-const $moreviewImage = document.querySelector('moreview-image');
-// 버튼을 누를 시 발동하는 함수 작성 (토글)
-function toggleView(){
-    $moreviewButton.classList.toggle('clickView');
-    $moreviewContainer.classList.toggle('clickView');
-    $moreviewImage.classList.toggle('clickView');
-};
-
-$moreviewButton.addEventListener('click', toggleView);
-
-// 활성화와 그렇지 않을떄에 각각의 새로운 창을 끄고 키고를 반복시킨다.
-
-// 이벤트를 부른다.
