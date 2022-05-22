@@ -13,6 +13,10 @@
 @import url('./media.css');
 @import url('./biograpy.css');
 @import url('./toggle.css');
+@import url('./portfolio.css');
+@import url('./contact.css');
+@import url('./foot.css');
+
 
 /* 기본 글꼴 및 스타일 설정 */
 
@@ -25,7 +29,7 @@
 
 /* 중첩되는 색상이나 폰트 및 간격에 대해서 미리 변수로 지정해놓고, var()를 통해서 기입하자 */
 :root{
-    --light-color:#f3f3fe;
+    --light-color:#F2DED0;
     --dark-color:#363636;
     --border-top-color: rgba(0,0,0,.1);
     --title-font-family: 'Playfair Display', 'serif';

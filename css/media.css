@@ -15,4 +15,50 @@
         column-gap: 2rem;
     }
 
+    .portfolio-cards{
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .portfolio-card-1{
+        grid-column: 1/6;
+        grid-row: 1/span 10;
+    }
+
+    .portfolio-card-2{
+        grid-column: 6/-1;
+        grid-row: 2/span 10;
+    }
+
+    .portfolio-card-3{
+        grid-column: 1/5;
+        grid-row: 11/span 10;
+    }
+
+    .portfolio-card-4{
+        grid-column: 5/-1;
+        grid-row: 12/span 10;
+    }
+
+    .portfolio-card-5{
+        grid-column: 4/-1;
+        grid-row: 22/span 10;
+    }
+
+    .portfolio-card-6{
+        grid-column: 1/4;
+        grid-row: 21/span 10;
+    }
+
+    .input-group{
+        display: flex;
+        column-gap: 5rem;
+    }
+
+    .input{
+        width: 100%;
+    }
+
+    .footer-container{
+        padding-block: 5rem;
+    }
 }
