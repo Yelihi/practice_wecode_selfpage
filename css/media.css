@@ -1,31 +1,35 @@
+
+/* 768px 이상일 경우 적용되는 미디어 쿼리. 형태를 그리드로 바꿔주고, 위치를 지정해 주었음*/
+
 @media screen and (min-width: 768px) {
     .inline-image{
         width: 12rem;
         height: 12rem;
     }
     
+    /* 소개글이나 연대기 글에서의 그리드 지정값. */
     .section-description{
-        grid-template-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr; /* 1열크기 2열크기 ....*/
         align-items: center;
     }
 
     .section-biograpy-container{
         grid-template-columns: 1.2fr 1.4fr;
         align-items: center;
-        column-gap: 2rem;
+        column-gap: 2rem; /* 구역 사이 간격*/
     }
 
     .portfolio-cards{
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(8, 1fr); /*열의 개수가 늘어나면 반복시킬 수 있다. fr은 비율*/
     }
 
     .portfolio-card-1{
-        grid-column: 1/6;
-        grid-row: 1/span 10;
+        grid-column: 1/6; /* column 시작 / 끝 */
+        grid-row: 1/span 10; /* row 스타트 / row 종료 . span은 그 숫자만큼 라인을 확장하는 개념. 늘린다는 개념으로 해석하면됨*/
     }
 
     .portfolio-card-2{
-        grid-column: 6/-1;
+        grid-column: 6/-1; /* -1이 끝자리라 생각하자. 구글 검사창에서 그리드 키고 적용하는걸 추천*/
         grid-row: 2/span 10;
     }
 
@@ -39,16 +43,7 @@
         grid-row: 12/span 10;
     }
 
-    .portfolio-card-5{
-        grid-column: 4/-1;
-        grid-row: 22/span 10;
-    }
-
-    .portfolio-card-6{
-        grid-column: 1/4;
-        grid-row: 21/span 10;
-    }
-
+    /* 입력창 갭 */
     .input-group{
         display: flex;
         column-gap: 5rem;
@@ -58,6 +53,7 @@
         width: 100%;
     }
 
+    /* 좀더 여유를 주려고*/
     .footer-container{
         padding-block: 5rem;
     }

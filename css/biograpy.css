@@ -3,8 +3,6 @@
 }
 
 
-
-
 .section-nav-container{
     display: flex;
     justify-content: center;
@@ -30,6 +28,11 @@
     font-weight: 300;
     padding: 1rem;
     position: relative;
+    transition: all .3s cubic-bezier(0.430, 0.080, 0.000, 0.990);
+}
+
+.history-navbar-list > label:hover{
+    font-weight: 500;
 }
 
 .history-navbar-list > label::after{
@@ -84,7 +87,7 @@
 .history-image{
     position: relative;
     height: 30rem;
-    background-color: #b3bbce;
+    background-color: #524643;
     margin-bottom: 2.5rem;
     border-radius: .4rem;
     display: flex;

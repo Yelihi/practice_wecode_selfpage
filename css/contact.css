@@ -1,7 +1,7 @@
-/* !CONTACT STYLES */
+
 .contact-form{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* 입력창 세로로 */
 }
 
 .input{
@@ -9,24 +9,37 @@
     margin-bottom: 5rem;
 }
 
+/* 라벨의 위치를 인풋 상단으로 변경시키려고. */
 .input-label{
     position: absolute;
     top: 0;
     left: 0;
     text-transform: uppercase;
     font-weight: bold;
-    transition: transform .25s;
+    transition: transform .25s; /* 마우스가 포커스 됬을 때와 안됬을 때의 부드러운 애니매이션 효과*/
 }
 
+/* 글자(라벨) 밑 입력창 */
 .input input{
     width: 100%;
     border-bottom: 1px solid var(--dark-color);
     padding: .5rem;
 }
 
+/* 인풋창에 마우스를 포커스 하면, 바로 인접인자인 라벨의 위치를 변경시킨다. */
 .input input:focus + .input-label{
     transform: translateY(-2.5rem);
 }
+
+
+.large-button-container{
+    display: flex;
+}
+
+.button-fill{
+    position: relative;
+    outline: 2px solid var(--dark-color); 
+    overflow: hidden;}
 
 .form-button{
     display: inline-block;
