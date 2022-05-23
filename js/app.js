@@ -54,3 +54,22 @@ const changeTheme = () => {
 }
 
 $themeToggleButton.addEventListener('click', changeTheme);
+
+
+// 스크롤바 라이브러리가 있길래 한번 사용해 봤습니다. (저도 아직 사용법은 잘...)
+
+const sr = ScrollReveal({
+    distance: '50px',
+    duration: 1500,
+    easing: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)'
+});
+
+sr.reveal('.main-title', {origin: 'top'});
+sr.reveal('.scroll-reveal-left', {origin: 'left'});
+sr.reveal('.scroll-reveal-right', {origin: 'right'});
+sr.reveal('.tech-stack-item', {interval: 250});
+sr.reveal('.con1', {origin: 'top', interval: 250});
+sr.reveal('.section-nav-container', {origin: 'top', interval: 250});
+sr.reveal(`.section-title, .section-subtitle-container`, {origin: 'top', interval: 250});
+sr.reveal('.portfolio-card', {interval: 500});
+sr.reveal(`.form-container, .footer`, {origin: 'top'});
