@@ -1,0 +1,22 @@
+/* !FOOTER STYLES */
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-top: 1px solid var(--border-top-color);
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer .list-link{
+    color: var(--dark-color);
+}
+
+.scroll-top{
+    display: flex;
+    align-items: center;
+    color: var(--dark-color);
+}

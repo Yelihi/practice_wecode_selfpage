@@ -1,0 +1,133 @@
+.input-container > input{
+    display: none;
+}
+
+
+
+
+.section-nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.history-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60rem;
+    height: max-content;
+    padding-bottom: 2rem;
+}
+
+
+.history-navbar-list > label{
+    display: flex;
+    cursor: pointer;
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    font-weight: 300;
+    padding: 1rem;
+    position: relative;
+}
+
+.history-navbar-list > label::after{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    content: '';
+    width: 7rem;
+    height: .2rem;
+    background-color: var(--dark-color);
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .1s .1s cubic-bezier(0.76, 0, 0.24, 1);
+    border: none;
+}
+
+.history-navbar-list > label:hover::after{
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+
+
+.section-biograpy-container{
+    display: none;
+    position: relative;
+}
+
+#tab-01:checked ~ .con1{
+    width: 100%;
+    height: auto;
+    display: grid;
+}
+
+#tab-02:checked ~ .con2{
+    width: 100%;
+    height: auto;
+    display: grid;
+}
+
+#tab-03:checked ~ .con3{
+    width: 100%;
+    height: auto;
+    display: grid;
+}
+
+#tab-04:checked ~ .con4{
+    width: 100%;
+    height: auto;
+    display: grid;
+}
+
+.history-image{
+    position: relative;
+    height: 30rem;
+    background-color: #b3bbce;
+    margin-bottom: 2.5rem;
+    border-radius: .4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .25s;
+}
+
+
+.history-image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+/* 설명글 속성  */
+
+.history-paragraph{
+    display: block;
+    padding: 2rem;
+}
+
+.history-p-alt{
+    font-size: 1.5rem;
+    opacity: .7;
+}
+
+.history-p-title{
+    padding: .7rem 0;
+    font-size: clamp(2.3rem , 3vw , 3.3rem);
+}
+
+.history-p-span{
+    font-weight: 300;
+    font-size: clamp(1.2rem , 1.5vw , 1.6rem);
+    padding-bottom: 2rem;
+};
+
+
+
+
+
+
+

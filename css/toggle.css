@@ -1,0 +1,198 @@
+.view-container{
+    width: 100%;
+    margin: auto;
+}
+
+.moreview-button1{
+    display: block;
+    border: 1px solid var(--dark-color);
+    border-radius: 2rem;
+    padding: .7rem;
+    z-index: 999;
+}
+
+
+.moreview-image1-container{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: 0%;
+    border-radius: 61px;
+    background: var(--light-color);
+    box-shadow:  6px 6px 68px var(--dark-color),
+                 -6px -6px 68px var(--light-color);
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    pointer-events: none;
+    padding: 3rem;
+    object-fit: contain;
+    transform: scale(0);
+    transform-origin: top;
+    transition: transform .25s .25s ease-in-out;
+    z-index: 999;
+}
+
+.moreview-image1-container > .moreview-image1{
+    width: 30rem;
+    object-fit: cover;
+    padding: .5rem;
+    opacity: 0;
+}
+/* 자바스크립트로 실행 할 떄 이벤트 */
+.clickView.moreview-image1-container{
+    transform: scale(1) translateY(5rem);
+    pointer-events: initial;
+}
+
+.clickView.moreview-image1-container > .moreview-image1{
+    opacity: 1;
+    transition: opacity .25s .25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/*  두번째 단락   */
+
+.moreview-button2{
+    display: block;
+    border: 1px solid var(--dark-color);
+    border-radius: 2rem;
+    padding: .7rem;
+    z-index: 999;
+}
+
+
+.moreview-image2-container{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: 0%;
+    border-radius: 61px;
+    background: var(--light-color);
+    box-shadow:  6px 6px 68px var(--dark-color),
+                 -6px -6px 68px var(--light-color);
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    pointer-events: none;
+    padding: 3rem;
+    object-fit: contain;
+    transform: scale(0);
+    transform-origin: top;
+    transition: transform .25s .25s ease-in-out;
+    z-index: 999;
+}
+
+.moreview-image2-container > .moreview-image2{
+    width: 30rem;
+    object-fit: cover;
+    padding: .5rem;
+    opacity: 0;
+}
+/* 자바스크립트로 실행 할 떄 이벤트 */
+.clickView.moreview-image2-container{
+    transform: scale(1) translateY(5rem);
+    pointer-events: initial;
+}
+
+.clickView.moreview-image2-container > .moreview-image2{
+    opacity: 1;
+    transition: opacity .25s .25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* 세번쩨 단락 */
+
+.moreview-button3{
+    display: block;
+    border: 1px solid var(--dark-color);
+    border-radius: 2rem;
+    padding: .7rem;
+    z-index: 999;
+}
+
+
+.moreview-image3-container{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: 0%;
+    border-radius: 61px;
+    background: var(--light-color);
+    box-shadow:  6px 6px 68px var(--dark-color),
+                 -6px -6px 68px var(--light-color);
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    pointer-events: none;
+    padding: 3rem;
+    object-fit: contain;
+    transform: scale(0);
+    transform-origin: top;
+    transition: transform .25s .25s ease-in-out;
+    z-index: 999;
+}
+
+.moreview-image3-container > .moreview-image3{
+    width: 30rem;
+    object-fit: cover;
+    padding: .5rem;
+    opacity: 0;
+}
+/* 자바스크립트로 실행 할 떄 이벤트 */
+.clickView.moreview-image3-container{
+    transform: scale(1) translateY(5rem);
+    pointer-events: initial;
+}
+
+.clickView.moreview-image3-container > .moreview-image3{
+    opacity: 1;
+    transition: opacity .25s .25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* 네번째 단락  */
+
+.moreview-button4{
+    display: block;
+    border: 1px solid var(--dark-color);
+    border-radius: 2rem;
+    padding: .7rem;
+    z-index: 999;
+}
+
+
+.moreview-image4-container{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: 0%;
+    border-radius: 61px;
+    background: var(--light-color);
+    box-shadow:  6px 6px 68px var(--dark-color),
+                 -6px -6px 68px var(--light-color);
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    pointer-events: none;
+    padding: 3rem;
+    object-fit: contain;
+    transform: scale(0);
+    transform-origin: top;
+    transition: transform .25s .25s ease-in-out;
+    z-index: 999;
+}
+
+.moreview-image4-container > .moreview-image4{
+    width: 30rem;
+    object-fit: cover;
+    padding: .5rem;
+    opacity: 0;
+}
+/* 자바스크립트로 실행 할 떄 이벤트 */
+.clickView.moreview-image4-container{
+    transform: scale(1) translateY(5rem);
+    pointer-events: initial;
+}
+
+.clickView.moreview-image4-container > .moreview-image4{
+    opacity: 1;
+    transition: opacity .25s .25s cubic-bezier(0.19, 1, 0.22, 1);
+}
