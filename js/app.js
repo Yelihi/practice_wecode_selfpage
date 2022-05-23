@@ -65,6 +65,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal('.summary-title', {origin: 'top'});
+sr.reveal('.summary-subtitle', {origin: 'top'});
 sr.reveal('.scroll-reveal-left', {origin: 'left'});
 sr.reveal('.scroll-reveal-right', {origin: 'right'});
 sr.reveal('.tech-stack-item', {interval: 250});
