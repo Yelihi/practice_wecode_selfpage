@@ -6,7 +6,7 @@ const menuElement = document.querySelector('.menu');
 
 // classlist -> DomTokenList(반환값) : 이 안에 많은 메서드가 존재한다.
 const toggleMenu = () => {
-    menuElement.classList.toggle('active');
+    menuElement.classList.toggle('active'); // 미리 지정해둔 active 라는 클래스를 스위치 온오프 해준다.
     menuToggleButton.classList.toggle('active');
 
 };
@@ -42,6 +42,12 @@ if(currentTheme){
 }
 
 // toggle을 통해 dark-theme 내 삭제 및 추가 변화가 발생한다. 
+
+// 즉, 예를 들어서 새로 고침을 했을 때, dark-theme 가 존재한다면, 토글로서 버튼을 누르게 되면 dark-theme는 사라지게 된다. 이때 클래스에서 사라진것을
+// 감지한다면, 기존에 있던 키 값 역시 삭제해 버린다. 
+// 그 다음 새로고침 시, 키 값을 읽어올수가 없으니, 클래스에 dark-theme를 추가하지 않는다. 
+// 이 상황에서 클릭을 통해 dark-theme를 가져오면, 클래스가 있다는것을 감지했으니, 키값 역시 추가해준다.
+// 다시 새로고침 시 키값이 있는것을 (body에서) 확인했으니, 클래스를 다시 추가시켜준다. 
 const changeTheme = () => {
     $body.classList.toggle('dark-theme');
 
