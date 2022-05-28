@@ -62,7 +62,7 @@ const changeTheme = () => {
 $themeToggleButton.addEventListener('click', changeTheme);
 
 
-// 스크롤바 라이브러리가 있길래 한번 사용해 봤습니다. (저도 아직 사용법은 잘...)
+// 클론코딩 중 스크롤바 라이브러리가 있길래 한번 사용해 봤습니다. (저도 아직 사용법은 잘...)
 
 const sr = ScrollReveal({
     distance: '50px',
