@@ -4,6 +4,8 @@
 @import url('./fonts/NotoSans/fonts.css');
 @import url('./fonts/SpoqaHanSans/fonts.css');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap');
+/* 구글 폰트 (숫자)*/
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Nanum+Gothic+Coding&display=swap');
 
 
 /* css */
@@ -33,6 +35,7 @@
     --border-top-color: rgba(0,0,0,.1);
     --title-font-family: 'Playfair Display', 'serif';
     --body-font-family: 'AritaDotum';
+    --clock-font-family: 'Gowun Batang', serif;
     --container-padding: 1.5rem;
     --section-vertical-spacing: 8rem;
 }

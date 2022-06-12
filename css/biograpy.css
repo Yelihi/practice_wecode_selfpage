@@ -35,7 +35,7 @@
     font-weight: 500;
 }
 
-.history-navbar-list > label::after{
+.history-navbar-list > label:not(.last)::after{
     position: absolute;
     top: 50%;
     left: 100%;

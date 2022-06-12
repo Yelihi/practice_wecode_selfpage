@@ -21,6 +21,12 @@
     <header class="header" id="home">
         <nav class="navbar container">
             <a href="./introduce.html" class="logo">Yelihi.</a>
+            <div class="clock-container">
+                <div class="clock">
+                    <div class="clock-string"></div>
+                </div>
+                <i class='bx bx-time-five bx-tada' id="clock-icon" ></i>
+            </div>
             <div class="navbar-buttons">
                 <button type="button" class="button icon-button menu-toggle-button">
                     <i class='bx bx-menu open-icon'></i>
@@ -77,8 +83,9 @@
         <div class="container">
             <div class="section-description d-grid">
                 <div class="scroll-reveal-left">
+                    <span id="todayGreeting"></span>
                     <p class="description">
-                        반갑습니다! 6조 <span class="text-bold">HotSix</span>팀에 소속되있는 연약한 예비 개발자 <span
+                         6조 <span class="text-bold">HotSix</span>팀에 소속되있는 연약한 예비 개발자 <span
                             class="text-bold">최원익</span>입니다. 올해 처음으로 개발자로 커리어전환을
                         계획하였고, <span class="text-bold">사용자 편의성과 시각적 영감</span>을 주는 웹페이지를 만들고 싶어 프론트엔드 개발자를 목표로 삼아 공부를
                         하고 있습니다.
@@ -139,7 +146,7 @@
                         <label for="tab-03">인천</label>
                     </div>
                     <div class="history-navbar-list">
-                        <label for="tab-04">이제는</label>
+                        <label class="last" for="tab-04">이제는</label>
                     </div>
                 </div>
 
@@ -387,6 +394,7 @@
           </footer>
     <script src="./js/app.js"></script>
     <script src="./js/toggle.js"></script>
+    <script src="./js/time.js"></script>
 </body>
 
 </html>
